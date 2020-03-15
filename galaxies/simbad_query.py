@@ -26,7 +26,7 @@ for i in range(len(ra)):
 
     # Наша галактика -- первый найденный объект (потому result_table[0])
     # Если для неё нашлись звёздные величины в фильтрах B и R -- выведем
-    # показатель цвета B-R
+    # её координаты и показатель цвета B-R
     if result_table[0]['FLUX_r'] and result_table[0]['FLUX_B']:
         color = float(result_table[0]['FLUX_B']) - float(result_table[0]['FLUX_r'])
         color = round(color, 3)
